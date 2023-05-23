@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME DATABASE</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <!-- My Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <!--NAVBAR BEGIN-->
+        <div class="navbar">
+            <a href="#" class="navbar-logo">DATA<span>BASE</span></a>
+            <div class="navbar-nav">
+                <a href="#">HOME</a>
+                <!--CENTRAL BELT-->
+                <a href="./centralbelt/index.html">CENTRAL BELT</a>
+                <!--CCB-->
+                <a href="./ccb/index.html">CCB</a>
+                <!--PT FLEXCO-->
+                <a href="./ptflexco/index.html">PT FLEXCO</a>
+            </div>
+
+		<div class="mode-switcher">
+		     <i class="fas fa-moon" id="dark-icon"></i>
+		     <i class="fas fa-sun" id="light-icon"></i>
+		</div>
+        </div>
+        <!--NAVBAR END-->
+        <!--HOME BEGIN-->
+        <div class="wrapper">
+            <h1 class="judul">WEB DATA BASE</h1>
+            <p class="deskripsi">INI ADALAH DATABASE UNTUK MENYIMPAN DATA-DATA MARKETING ONLINE</p>
+            <img src="./asset/Data Base.jpg" alt="DATA BASE" class="database" />
+        </div>
+        <!--HOME END--> 
+        <!--FOOTER BEGIN-->
+        <div class="footer">
+            <h1 class="h1-footer"><span class="span1">&copy;</span> Alfarobby27<span> 2023<span></span></h1>
+        </div>
+        <!--FOOTER END-->
+    <!--My Script-->
+    <script>
+	const darkIcon = document.getElementById('dark-icon');
+	const lightIcon = document.getElementById('light-icon');
+
+	// Function to toggle the mode
+	function toggleMode() {
+  	  if (document.body.classList.contains('dark-mode')) {
+    		document.body.classList.remove('dark-mode');
+    		darkIcon.style.display = 'block';
+    		lightIcon.style.display = 'none';
+  	  } else {
+    		document.body.classList.add('dark-mode');
+    		darkIcon.style.display = 'none';
+    		lightIcon.style.display = 'block';
+  	  }
+	}
+
+	// Add event listener to the icon
+	darkIcon.addEventListener('click', toggleMode);
+	lightIcon.addEventListener('click', toggleMode);
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT FLEXCO DATABASE</title>
+
+    <!-- Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+        <!--NAVBAR BEGIN-->
+        <div class="navbar">
+            <a href="#" class="navbar-logo">DATA<span>BASE</span> PT FLEXCO</a>
+            <div class="navbar-nav">
+                <a href="../index.html">HOME</a>
+                <!--PT FLEXCO-->
+                <a href="../centralbelt/index.html">CENTRAL BELT</a>
+                <!--CCB-->
+                <a href="../ccb/index.html">CCB</a>
+                <!--PT FLEXCO-->
+                <a href="#">PT FLEXCO</a>
+            </div>
+	    <div class="mode-switcher">
+		<i class="fas fa-moon" id="dark-icon"></i>
+		<i class="fas fa-sun" id="light-icon"></i>
+	    </div>
+        </div>
+        <!--NAVBAR END-->
+
+        <!--CARD BEGIN-->
+        <div class="wrapper">
+            <div class="card text-center">
+                <h1 class="title">DATABASE PRODUCT</h1>
+                <i class="fa-solid fa-cart-shopping icons"></i>
+                <p class="description">Ini adalah folder database produk PT FLEXCO</p>
+                <button class="btn"><a href="https://docs.google.com/spreadsheets/d/1k0JZUWuIPwWlUQ5CC1_3cwJgnZruLckA/edit?rtpof=true" class="btn">Buka Data</a></button>
+            </div>
+            <div class="card text-center">
+                <h1 class="title">DATABASE LAPORAN</h1>
+                <i class="fa-solid fa-book icons"></i>
+                <p class="description">Ini adalah folder database laporan PT FLEXCO</p>
+                <button class="btn"><a href="https://drive.google.com/drive/folders/1958azvbLatQKo8JH_GWySQQx30o30CmC?usp=share_link" class="btn">Buka Data</a></button>
+            </div>
+            <div class="card text-center">
+                <h1 class="title">DATABASE CUSTOMER</h1>
+                <i class="fa-solid fa-user icons"></i>
+                <p class="description">Ini adalah folder database customer PT FLEXCO</p>
+                <button class="btn"><a href="https://docs.google.com/spreadsheets/d/1-pL3UKTUbmywaBe030Z1ZJQwTGG1LJG4/edit?usp=share_link&ouid=102193994397261865157&rtpof=true&sd=true" class="btn">Buka Data</a></button>
+            </div>
+        </div>
+        <!--CARD END-->
+        
+    	<!--My Script-->
+    	<script>
+		const darkIcon = document.getElementById('dark-icon');
+		const lightIcon = document.getElementById('light-icon');
+
+		// Function to toggle the mode
+		function toggleMode() {
+  	  	  if (document.body.classList.contains('dark-mode')) {
+    		     document.body.classList.remove('dark-mode');
+    		     darkIcon.style.display = 'block';
+    		     lightIcon.style.display = 'none';
+  	  	  } else {
+    		     document.body.classList.add('dark-mode');
+    		     darkIcon.style.display = 'none';
+    		     lightIcon.style.display = 'block';
+  	  	  }
+		}
+
+		// Add event listener to the icon
+		darkIcon.addEventListener('click', toggleMode);
+		lightIcon.addEventListener('click', toggleMode);
+    	</script>
+</body>
+</html>
